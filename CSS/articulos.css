@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    padding: 20px;
+}
+
+#formulario-articulo{
+    margin-bottom: 20px;
+}
+
+#formulario-articulo label{
+    display: block;
+    margin-top: 10px;
+}
+
+#formulario-articulo input,
+#formulario-articulo textarea,
+#formulario-articulo button{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+#formulario-articulo button{
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contacto #formulario-contacto{
+    margin-bottom: 20px;
+}
+
+.contacto #formulario-contacto{
+    display: block;
+    margin-top: 10px;
+}
+
+.contacto #formulario-contacto input,
+.contacto #formulario-contacto textarea,
+.contacto #formulario-contacto button{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.contacto #formulario-contacto button{
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contacto #confirmacion{
+    color: green;
+    font-weight: bold;
+}
+
+
+
+

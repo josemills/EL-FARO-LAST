@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* En el margin, padding y border-sizing no se generan cambios */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Se establece el colo gris para el fondo */
+body{
+    background: white;
+    align-items: center; 
+}
+/* Se aplica a todos los elementos que tienen la clase .sin-subrayado 
+y son los primeros hijos  de el elemento <nav>. 
+Cuando estos elementos no están siendo activados por un hover, 
+tendrán subrayado en el texto (text-decoration: underline;), 
+el color del texto será negro (color: black;) y el peso de la fuente será en negrita (font-weight: bold;). */
+nav .sin-subrayado:first-child{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+/* Se aplica a los mismos elementos mencionados anteriormente, pero solo cuando están siendo activados por un hover. 
+Cuando se activa el hover, el subrayado del texto se elimina (text-decoration: none;), 
+pero el color del texto y el peso de la fuente se mantienen sin cambios (color: black; y font-weight: bold; respectivamente). */
+nav .sin-subrayado:first-child:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* Esto selecciona todos los elementos con la clase .grilla 
+que son descendientes de un elemento <nav>, y aplica los estilos cuando se activa el hover sobre ellos. */
+nav .grilla:hover{
+    text-decoration: none;
+    background: black;
+    color: white;
+}
+/* Define el aspecto visual básico para todos los elementos <footer> en LA página web, 
+estableciendo el color de fondo y el color del texto. */
+footer{
+    background: #c9d2d0;
+    color: #31231e;
+}
