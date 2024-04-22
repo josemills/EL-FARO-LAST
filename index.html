@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro-Periodico</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-reloj">
+        <h1 id="tiempo">00:00:00</h1>
+        <p id="fecha">Fecha</p>
+    </div>
+    <script src="JS/reloj.js"></script>
+    <header>
+        <div class="card" style="width: 18rem;">
+            <img src="MEDIA/faro.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Periodico "El Faro"</h5>
+              <p class="card-text">Bienvenido a nuestro periodico, es a qui en donde
+                puedes encontrar la información más relevante tanto de negocios
+                como tambien deportes.
+              </p>
+            </div>
+          </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menú</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active sin-subrayado" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sin-subrayado" href="deporte.html">Deportes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sin-subrayado" href="negocios.html">Negocios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+       
+        <h3>Artículos de Noticia</h3>
+        <div>
+            <table class="table table-primary">
+                <div id="contador-articulos">Cantidad de artículos: 3</div>
+                <tr class="table-success">
+                    <th class="grilla">Título</th>
+                    <th class="grilla">Categoría</th>
+                    <th class="grilla">Texto</th>
+                </tr>
+                <!-- Noticia 1 -->
+                <tr>
+                    <td class="grilla">
+                        De pedir "perdon"<br>
+                        a sumarios por escandalos
+                    </td>
+                    <td class="grilla">
+                        Politica
+                    </td>
+                    <td class="grilla">
+                        Muñoz se encuentra cumpliendo desde el martes de la semana<br>
+                        pasada la medida cautelar de prisión preventiva en la<br> 
+                        de Reacción Táctica de la PDI en la comuna de Cerrillos.<br>
+                        La fiscalía le imputó al ex jefe policial el delito de<br>
+                        Infracción artículo 31 de la Ley 19.913 e<br>
+                        Infracción artículo 246 del Código Penal por revelarle<br>
+                        información secreta al abogado Luis Hermosilla,<br>
+                        involucrado en el caso Audio.
+                    </td>
+                </tr>
+                <!-- Noticia 2 -->
+                <tr class="table-success">
+                    <td class="grilla">
+                        Crisis:César Garrido sale de la<br>
+                        Gerencia General de Huachipato<br>
+                        y contratistas de la empresa acusan<br>
+                        primeros despidos.<br>
+                    </td>
+                    <td class="grilla">
+                        Economía
+                    </td>
+                    <td class="grilla">
+                        La Siderúrgica Huachipato anunció cambios en su directiva.<br>
+                        Según informó en un comunicado, César Garrido dejó su cargo<br>
+                        como gerente general y será reemplazado de forma interina por<br>
+                        Jean Paul Sauré Roeckel.
+                    </td>
+                </tr>
+                <!-- Noticia 3 -->
+                <tr>
+                    <td class="grilla">
+                        Tabla que salva a Rose de morir en "Titanic"<br>
+                        se vende en subasta por unos $702 millones.
+                    </td>
+                    <td class="grilla">
+                        Espectáculos
+                    </td>
+                    <td class="grilla">
+                        La icónica tabla de la que Rose (Kate Winslet) y Jack (Leonardo DiCaprio)<br>
+                        se agarran en la escena final de la película "Titanic"<br>
+                        se vendió en una subasta por 718.750 dólares (unos $702 millones),<br> 
+                        superando a otros objetos a la venta como<br>
+                        el látigo de Indiana Jones en "El templo de la perdición".<br>
+                    </td>
+                </tr>
+                <script src="JS/contador-articulos.js"></script>
+            </table>
+            <main>
+                <link rel="stylesheet" href="CSS/articulos.css">
+                    <h1>Agrega un Articulo</h1>
+                        <form id="formulario-articulo">
+                            <label for="titulo">Titulo:</label>
+                            <input type="text" id="titulo" name="titulo" required>
+                            <br>
+                            <label for = "descripcion">Descripción:</label>
+                            <textarea id="descripcion" name="descripcion" required></textarea>
+                            <br>
+                            <button type="button" class="btn btn-info">Agregar Articulo</button>
+                        </form>
+                    <script src="JS/articulos.js"></script>
+
+                <div class="contacto">
+                    <h2>Formulario de Contacto</h2>
+                    <form id = "formulario-contacto">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <br>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <br>
+                        <button type="button" class="btn btn-info">Enviar</button>
+                    </form>
+                    <script src="JS/contacto.js"></script>
+                    <div id="confirmacion" style="display: none;">Gracias por tu mensaje. Nos contactaremos contigo a la brevedad</div>
+                </div>
+            </main>
+        </div>
+    
+    <footer>
+        <h3> "Video y audio"</h3>
+
+            <video width="500px" height="300px" controls >
+                <source src="MEDIA/video.mp4.mp4" type="video/mp4">
+            </video>
+
+            <audio controls>
+                <source src="MEDIA/lofi.mp3" type="audio/mp3">
+            </audio>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
