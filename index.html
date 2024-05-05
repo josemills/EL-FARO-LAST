@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <div class="container-reloj">
+    <div class="container-reloj"> 
         <h1 id="tiempo">00:00:00</h1>
         <p id="fecha">Fecha</p>
     </div>
@@ -29,6 +29,18 @@
               </p>
             </div>
           </div>
+        <form action="action.php" method="$_POST">
+            Nombre: <input type="text" name="nombre" autofocus required />
+            <br/>
+            Correo electronico: <input type="email" name="email" />
+            <br />
+            Fecha: <input type="date" name="fecha" />
+            <br / >
+            Teléfono: <input type="tel" name="telefono" />
+            <br />
+            <br />
+            <input type="submit" value="Enviar" />
+        </form>
     </header>
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
